@@ -3,6 +3,7 @@ name: Sync ngspice mirror
 on:
   schedule:
     - cron: '16 18 * * *'
+  workflow_dispatch:
 
 jobs:
   sync:
