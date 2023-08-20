@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: ${{ env.GITHUB_REPOSITORY_OWNER }}/ngspice-mirror
+          repository: ${{ github.repository.owner }}/ngspice-mirror
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup upstream remote
